@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Moja pierwsza strona</title>
+        <style>
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 1px solid black;
+                background: lightgray;
+            }
+            
+            .heading {
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            
+            .image {
+                width: 350px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            .text-container {
+                width: 380px;
+                margin-right: 40px;
+                display: inline-block;
+            }
+            
+            .list-container {
+                margin-top: 40px;
+                width: 250px;
+                display: inline-block;
+            }
+            
+            .list-container p {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+            <h1 class="heading">Sprzedam lokowke</h1>
+            <div>
+               <div class="text-container">
+                    <h2 class="text">
+                        Lokowka nowa, nie uzywana
+                    </h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi et, possimus eius aut. Expedita, laboriosam fugit maiores debitis eaque, quo nobis sunt officia optio at, voluptas nesciunt reiciendis laudantium?
+                    </p>
+               </div>
+                <img class="image" src="https://f00.esfr.pl/foto/1/3274378608/430b681e4e58451ce51e16b4270a5a02/remington-pearl-wand-ci95,3274378608_7.jpg" alt="">                     
+           </div>
+           <div class="list-container">
+               <p>Funkcje</p>
+               <ul class="list">
+                   <li>Automatyczne podkręcanie</li>
+                   <li>Hydromasaż</li>
+                   <li>Wygładzanie włosow</li>
+               </ul>
+           </div>
+           <div class="list-container">
+               <p>Ostrzeżenia</p>
+               <ul class="list">
+                   <li>Nie kręć włosow mokrych</li>
+                   <li>ABC</li>
+                   <li>DEF</li>
+               </ul>
+           </div>
+           <div class="list-container">
+               <p>Kategorie</p>
+               <ul class="list">
+                   <li>lokowka</li>
+                   <li>suszarka</li>
+                   <li>super lokowka</li>
+               </ul>
+           </div>                      
+      </div>
+    </body>
+    <script>
+        fetch('https://api-2445582011268.apicast.io/games/', 
+            {
+                headers : {
+                    'user-key' : 'c3cf3a4d2def1223502dbf7818d28847',
+                    'Access-Control-Allow-Headers': 'Origin Content-Type X-Auth-Token'
+                }
+            }
+        ).then(a => console.log(a.json()));
+    </script>
+</html>
+
